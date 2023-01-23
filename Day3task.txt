@@ -1,0 +1,104 @@
+		1.JSON ITERATE - FOR IN LOOP
+
+Code
+var toyshop={
+  "doll1":"teddy",
+  "doll2":"barbie",
+  "doll3":"spiderman",
+  "doll4":"nippon",
+  "vehicle":["car","bike","truck","firetruck","train","aeroplane"]
+};
+for(var n in toyshop)
+{console.log(toyshop[n]);
+}
+
+Output
+teddy
+barbie
+spiderman
+nippon
+['car','bike','truck','firetruck','train',
+'aeroplane']
+
+
+JSON ITERATE FOR LOOP
+
+Code
+var toyshop={
+  "doll1":"teddy",
+  "doll2":"barbie",
+  "doll3":"spiderman",
+  "doll4":"nippon",
+  "vehicle":["car","bike","truck","firetruck","train","aeroplane"]
+};
+for(var i=0;i<toyshop.vehicle.length;i++)
+{
+console.log(toyshop.vehicle[i]);
+}
+
+
+
+
+2.CREATE YOUR OWN RESUME DATA IN JSON FORMAT
+
+var resume={
+{
+"Personal details":
+"name":"Archana M",
+"age":"31",
+"gender":"female",
+"mailid":"archanam794@gmail.com",
+"mobileno":"9159147137",
+"address":["18/10,kattabomman street",
+			"ambal nagar",
+			"chennai-32"]
+},
+{
+"Educational details":
+"Degree":"BE ECE",
+"Institue":"DSCET",
+"University":"Anna university",
+"Duration":"2009-2013",
+"score":"8.0(cgpa)",
+"HSC":"Dhanalaksmi srinivasan matric hr.sec.school",
+"Board1":"TN state board",
+"yearout1":"2009",
+"percentage1":"81.9",
+"SSLC":"NLC hr.sec.school",
+"Board":":"TN state board",
+"yearout":"2007",
+"percentage":"73.3"
+},
+{
+"Projects":
+"Miniproject":"Design of low cost modem using IR",
+"Majorproject":"Smart vehicle control via voice"
+},
+{
+"Supplementary":
+"Inplanttraining":"MAPS kalpakkam",
+},
+{"Industrialvisit":
+"Place":"v Guard stabilizer cochin kerala",
+"Place1":"RA Power Gen Engineers Pvt Bangalore"
+},
+{
+"LANGUAGES":
+"English":"speak read write",
+"Tamil":" speak read write",
+"Telugu":"speak"
+},
+
+{
+"work":
+"company":"Careerwiz academy",
+"role":"Mentor",
+"experience":"1year and 6month"
+}
+}
+
+
+
+
+
+
