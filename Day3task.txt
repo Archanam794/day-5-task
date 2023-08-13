@@ -88,8 +88,8 @@ vehicle [ 'car', 'bike', 'truck', 'firetruck', 'train', 'aeroplane' ]
 2.CREATE YOUR OWN RESUME DATA IN JSON FORMAT
 
 var resume={
-{
-"Personal details":
+
+"Personal details":{
 "name":"Archana M",
 "age":"31",
 "gender":"female",
@@ -99,50 +99,80 @@ var resume={
 			"ambal nagar",
 			"chennai-32"]
 },
-{
-"Educational details":
+
+"Educational details":[{
 "Degree":"BE ECE",
 "Institue":"DSCET",
 "University":"Anna university",
 "Duration":"2009-2013",
-"score":"8.0(cgpa)",
-"HSC":"Dhanalaksmi srinivasan matric hr.sec.school",
-"Board1":"TN state board",
-"yearout1":"2009",
-"percentage1":"81.9",
-"SSLC":"NLC hr.sec.school",
-"Board":":"TN state board",
-"yearout":"2007",
-"percentage":"73.3"
-},
-{
-"Projects":
+"score":"8.0(cgpa)"}],
+
+"Projects":{
 "Miniproject":"Design of low cost modem using IR",
 "Majorproject":"Smart vehicle control via voice"
 },
-{
-"Supplementary":
+
+"Supplementary":{
 "Inplanttraining":"MAPS kalpakkam",
 },
-{"Industrialvisit":
+"Industrialvisit":{
 "Place":"v Guard stabilizer cochin kerala",
 "Place1":"RA Power Gen Engineers Pvt Bangalore"
 },
-{
-"LANGUAGES":
+
+"LANGUAGES":{
 "English":"speak read write",
 "Tamil":" speak read write",
 "Telugu":"speak"
 },
 
-{
-"work":
+
+"work":{
 "company":"Careerwiz academy",
 "role":"Mentor",
 "experience":"1year and 6month"
 }
 }
 
+output:
+{
+  'Personal details': {
+    name: 'Archana M',
+    age: '31',
+    gender: 'female',
+    mailid: 'archanam794@gmail.com',
+    mobileno: '9159147137',
+    address: [ '18/10,kattabomman street', 'ambal nagar', 'chennai-32' ]
+  },
+  'Educational details': [
+    {
+      Degree: 'BE ECE',
+      Institue: 'DSCET',
+      University: 'Anna university',
+      Duration: '2009-2013',
+      score: '8.0(cgpa)'
+    }
+  ],
+  Projects: {
+    Miniproject: 'Design of low cost modem using IR',
+    Majorproject: 'Smart vehicle control via voice'
+  },
+  Supplementary: { Inplanttraining: 'MAPS kalpakkam' },
+  Industrialvisit: {
+    Place: 'v Guard stabilizer cochin kerala',
+    Place1: 'RA Power Gen Engineers Pvt Bangalore'
+  },
+  LANGUAGES: {
+    English: 'speak read write',
+    Tamil: ' speak read write',
+    Telugu: 'speak'
+  },
+  work: {
+    company: 'Careerwiz academy',
+    role: 'Mentor',
+    experience: '1year and 6month'
+  }
+}
 
 
 
