@@ -1,6 +1,7 @@
-		1.JSON ITERATE - FOR IN LOOP
+				1.JSON ITERATE - FOR IN LOOP
 
 Code
+
 var toyshop={
   "doll1":"teddy",
   "doll2":"barbie",
@@ -20,8 +21,27 @@ nippon
 ['car','bike','truck','firetruck','train',
 'aeroplane']
 
+					JSON  ITERATEN FOR-EACH LOOP
+code
+var toyshop={
+  "doll1":"teddy",
+  "doll2":"barbie",
+  "doll3":"spiderman",
+  "doll4":"nippon",
+  "vehicle":["car","bike","truck","firetruck","train","aeroplane"]
+};
+Object.keys(toyshop).forEach((key)=>{
+    console.log(key,toyshop[key]);
+})
 
-JSON ITERATE FOR LOOP
+Output:
+doll1 teddy
+doll2 barbie
+doll3 spiderman
+doll4 nippon
+vehicle [ 'car', 'bike', 'truck', 'firetruck', 'train', 'aeroplane' ]
+
+					JSON ITERATE FOR LOOP
 
 Code
 var toyshop={
@@ -35,7 +55,33 @@ for(var i=0;i<toyshop.vehicle.length;i++)
 {
 console.log(toyshop.vehicle[i]);
 }
+output:
+car
+bike
+truck
+firetruck
+train
+aeroplane
 
+					JSON ITERATE FOR-OFLOOP
+code
+var toyshop={
+  "doll1":"teddy",
+  "doll2":"barbie",
+  "doll3":"spiderman",
+  "doll4":"nippon",
+  "vehicle":["car","bike","truck","firetruck","train","aeroplane"]
+};
+for(const[key, value] of Object.entries(toyshop)){
+    console.log(key,value);
+}
+
+output:
+doll1 teddy
+doll2 barbie
+doll3 spiderman
+doll4 nippon
+vehicle [ 'car', 'bike', 'truck', 'firetruck', 'train', 'aeroplane' ]
 
 
 
